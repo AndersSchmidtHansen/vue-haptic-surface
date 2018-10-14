@@ -3,7 +3,7 @@ A Vue.js component that sends back geometric data from any element it wraps.
 
 ## [CodePen Example](https://codepen.io/andersschmidt/full/3c3ee5243ba353d74cc2b2a551dae909/)
 
-![Example .GIF](./example.gif)
+![Example .GIF](https://s3-us-west-2.amazonaws.com/s.cdpn.io/16584/de629ae194ea41b2b86473a5a6040387%20(1).gif)
 
 ## Installation
 ```js
