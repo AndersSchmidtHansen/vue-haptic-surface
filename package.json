@@ -1,6 +1,6 @@
 {
   "name": "vue-haptic-surface",
-  "version": "0.0.2-alpha",
+  "version": "0.0.3-alpha",
   "description": "A Vue.js component that sends back geometric data from any element it wraps. Useful for micro-interactions, mouse movement animations, parallaxes and much more.",
   "main": "src/index.js",
   "scripts": {
