@@ -6,16 +6,17 @@ A Vue.js component that sends back geometric data from any element it wraps.
 ![Example .GIF](./example.gif)
 
 ## Installation
-```
+```js
 npm install vue-haptic-surface
 ```
-```
+```js
 import VueHapticSurface from 'vue-haptic-surface'
+
 Vue.use(VueHapticSurface)
 ```
 
 ## Usage
-```
+```html
 <template lang="pug">
   haptic-surface(@sensing="onSense")
     .element(:style="{ transform: `translateY(${haptic && haptic.pointer.y}px)` }")
@@ -41,7 +42,7 @@ Vue.use(VueHapticSurface)
 If you have multiple elements nested inside a `haptic-surface` component, you may end up in a situation where the positions of those nested elements go bonkers. That is because of the nested elements also triggering the `mousemove` when moving around the surface of the upper-most component.
 
 One way of fixing this is to remove the `pointer-events` from those nested elements using a class like this:
-```
+```css
 .pointer-events-none-children > * { pointer-events: none; }
 ```
 
@@ -53,7 +54,7 @@ The component exposes a couple of different collections of data, primarily from 
 ### Pointer (e.g. `haptic.pointer`)
 Simply exposes the current mouse position, including an inverted version of the `x` and `y` values and a 360 degree calculation. The `degree` value is especially useful for rotations and changing the hue of colors on an element.
 
-```
+```js
 {
   "x": 141,
   "y": 27,
@@ -65,7 +66,7 @@ Simply exposes the current mouse position, including an inverted version of the 
 
 ### Center (e.g. `haptic.center`)
 Returns the centerpoints of the `haptic-surface` element.
-```
+```js
 {
   "x": 125,
   "y": 150,
@@ -77,7 +78,7 @@ Returns the centerpoints of the `haptic-surface` element.
 ### Shape (e.g. `haptic.shape`)
 The basic shape data of the `haptic-surface` component itself. This is just the `getBoundingClientRect()` information without any bell's and whistles.
 
-```
+```js
 {
   "x": 32,
   "y": 163,
@@ -93,7 +94,7 @@ The basic shape data of the `haptic-surface` component itself. This is just the 
 ### Distance (e.g. `haptic.distance`)
 Returns a boatload of information about the pointer's distance from each corner (and the center) of the `haptic-surface` element. Also includes a percentage calculation in both directions which can be useful in cases where having a 0 to 100% value is more optimal.
 
-```
+```js
 // haptic.distance.topLeft
 {
   "x": 141,
@@ -110,7 +111,7 @@ Returns a boatload of information about the pointer's distance from each corner 
 ### Corners (e.g. `haptic.corners`)
 The same as `Shape`, but returns the `x` and `y` points of the corners of the `haptic-surface` element.
 
-```
+```js
 {
   "x": 0,
   "y": 0,
@@ -124,7 +125,7 @@ Sometimes it's useful to have a list of clicks that happened prior to the curren
 
 A potential use case is to add ripple effects on buttons or elements, or placing a trail of dots, hotspots or other markers.
 
-```
+```js
 {
   "x": 110,
   "y": 96,
