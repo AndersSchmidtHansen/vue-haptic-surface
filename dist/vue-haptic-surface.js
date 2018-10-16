@@ -665,20 +665,20 @@ function normalizeComponent (
   }
 }
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules//.cache//vue-loader","cacheIdentifier":"0595ba96-vue-loader-template"}!C:/Users/me/AppData/Local/Yarn/Data/global/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/HapticSurface.vue?vue&type=template&id=4b919cb5&shadow
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules//.cache//vue-loader","cacheIdentifier":"0595ba96-vue-loader-template"}!C:/Users/me/AppData/Local/Yarn/Data/global/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/VueHapticSurface.vue?vue&type=template&id=ed5e040e&shadow
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',_vm._g({on:{"mousemove":_vm.sense,"click":_vm.sense}},_vm.$listeners),[_vm._t("default")],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/HapticSurface.vue?vue&type=template&id=4b919cb5&shadow
+// CONCATENATED MODULE: ./src/VueHapticSurface.vue?vue&type=template&id=ed5e040e&shadow
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/HapticSurface.vue?vue&type=script&lang=js&shadow
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/VueHapticSurface.vue?vue&type=script&lang=js&shadow
 //
 //
 //
 //
 
-/* harmony default export */ var HapticSurfacevue_type_script_lang_js_shadow = ({
+/* harmony default export */ var VueHapticSurfacevue_type_script_lang_js_shadow = ({
   name: 'HapticSurface',
   props: {
     maxClickPositionsSaved: {
@@ -828,8 +828,8 @@ var staticRenderFns = []
   }  
 });
 
-// CONCATENATED MODULE: ./src/HapticSurface.vue?vue&type=script&lang=js&shadow
- /* harmony default export */ var src_HapticSurfacevue_type_script_lang_js_shadow = (HapticSurfacevue_type_script_lang_js_shadow); 
+// CONCATENATED MODULE: ./src/VueHapticSurface.vue?vue&type=script&lang=js&shadow
+ /* harmony default export */ var src_VueHapticSurfacevue_type_script_lang_js_shadow = (VueHapticSurfacevue_type_script_lang_js_shadow); 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
 /* globals __VUE_SSR_CONTEXT__ */
 
@@ -925,7 +925,7 @@ function componentNormalizer_normalizeComponent (
   }
 }
 
-// CONCATENATED MODULE: ./src/HapticSurface.vue?shadow
+// CONCATENATED MODULE: ./src/VueHapticSurface.vue?shadow
 
 
 
@@ -934,7 +934,7 @@ function componentNormalizer_normalizeComponent (
 /* normalize component */
 
 var component = componentNormalizer_normalizeComponent(
-  src_HapticSurfacevue_type_script_lang_js_shadow,
+  src_VueHapticSurfacevue_type_script_lang_js_shadow,
   render,
   staticRenderFns,
   false,
@@ -944,8 +944,8 @@ var component = componentNormalizer_normalizeComponent(
   ,true
 )
 
-component.options.__file = "HapticSurface.vue"
-/* harmony default export */ var HapticSurfaceshadow = (component.exports);
+component.options.__file = "VueHapticSurface.vue"
+/* harmony default export */ var VueHapticSurfaceshadow = (component.exports);
 // CONCATENATED MODULE: C:/Users/me/AppData/Local/Yarn/Data/global/node_modules/@vue/cli-service/lib/commands/build/entry-wc.js
 
 
@@ -957,7 +957,7 @@ component.options.__file = "HapticSurface.vue"
 
 
 
-window.customElements.define('haptic-surface', vue_wc_wrapper(external_Vue_default.a, HapticSurfaceshadow))
+window.customElements.define('vue-haptic-surface', vue_wc_wrapper(external_Vue_default.a, VueHapticSurfaceshadow))
 
 /***/ }),
 
@@ -969,4 +969,4 @@ module.exports = Vue;
 /***/ })
 
 /******/ });
-//# sourceMappingURL=haptic-surface.js.map
+//# sourceMappingURL=vue-haptic-surface.js.map

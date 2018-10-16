@@ -1,4 +1,4 @@
-import component from './HapticSurface.vue';
+import component from './VueHapticSurface.vue';
 
 // install function executed by Vue.use()
 function install(Vue) {
@@ -9,7 +9,7 @@ function install(Vue) {
 
 // Create module definition for Vue.use()
 const plugin = {
-  install,
+  install
 };
 
 // To auto-install when vue is found
